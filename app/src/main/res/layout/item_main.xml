@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/iv_pic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            tools:src="@mipmap/ic_launcher_round"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.1"
+            android:maxLines="2"
+            android:textColor="#191919"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="新版youtube视频拖放效果新版youtube视频拖放效果"
+            app:layout_constraintStart_toEndOf="@id/iv_pic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_pic"/>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="新版youtube视频拖放效果新版youtube视频拖放效果"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:maxLines="2"
+            android:lineSpacingMultiplier="1.2"
+            android:ellipsize="end"
+            android:layout_marginStart="@dimen/dp_10"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            app:layout_constraintStart_toEndOf="@id/iv_pic"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="2019-1-1"
+            android:textSize="13sp"
+            android:layout_marginStart="@dimen/dp_10"
+            app:layout_constraintStart_toEndOf="@id/iv_pic"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_pic"/>
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="作者"
+            android:textSize="12sp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@id/tv_time"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_pic"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.design.card.MaterialCardView>
